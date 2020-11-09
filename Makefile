@@ -4,7 +4,7 @@ build:
 	gcc -Wall test.c -o test -L. -lmtwister
 
 test: build
-	./test
+	time ./test
 
 clean:
 	-rm -f ./*.o
